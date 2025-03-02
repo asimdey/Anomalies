@@ -54,7 +54,6 @@ maxValAll
 ###################  TDA   #################################################
 
 
-setwd("C:/Users/adey/OneDrive/Transportation Network/R code/")
 
 betti_0=betti_1=c()
 PD =c()
