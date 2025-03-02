@@ -4,7 +4,7 @@ library(igraph)
 ######################################################
 ###################### Experimet 1 ##################
 
-nomFile<-read.table("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/SBM_Cobmined_RegularAnomaly_Exp2A.csv", header = TRUE, sep = ",")
+nomFile<-read.table("SBM_Cobmined_RegularAnomaly_Exp2A.csv", header = TRUE, sep = ",")
 
 
 nomFile<-nomFile[,-1]  # remove first column-- IDs
@@ -115,7 +115,7 @@ F1= 2*((Precision*Recall)/(Precision+Recall));F1 #  0.222
 ################## Experiment 2 ###########################
 
 
-nomFile<-read.table("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/SBM_Cobmined_RegularAnomaly_Exp4B.csv", header = TRUE, sep = ",")
+nomFile<-read.table("SBM_Cobmined_RegularAnomaly_Exp4B.csv", header = TRUE, sep = ",")
 
 
 nomFile<-nomFile[,-1]  # remove first column-- IDs
