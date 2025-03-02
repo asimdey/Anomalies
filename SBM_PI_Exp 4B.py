@@ -38,7 +38,7 @@ import copy
 
 ##########################################################################################
 
-data = pd.read_csv("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_PD_Comb_Exp4B.csv", header=None)
+data = pd.read_csv("SBM_PD_Comb_Exp4B.csv", header=None)
 print(data)
 
 data.shape
@@ -96,8 +96,6 @@ for i in range(0, T2,3):
 DF = pd.DataFrame(VecI)
 DF.shape
 # save the dataframe as a csv file
-DF.to_csv("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Exp4B_PI_SBM.csv")
-
 
 ############### plot ##################################
 pimgr = PersistenceImager(pixel_size=1)
