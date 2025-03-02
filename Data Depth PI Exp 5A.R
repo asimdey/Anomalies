@@ -12,8 +12,7 @@ library(ineq)
 ###################### Experimet 2 ##################
 
 
-PI<-read.table("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/Exp5A_PI_SBM.csv", header = TRUE, sep = ",")
-PI<-read.table("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Exp5A_PI_SBM.csv", header = TRUE, sep = ",")
+PI<-read.table("Exp5A_PI_SBM.csv", header = TRUE, sep = ",")
 
 PI<-PI[,-1]  # remove first column-- IDs
 head(PI[1:5,1:4])
@@ -69,12 +68,7 @@ O1
 
  
 
-
-#write.table(O1, "C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Outlyingness_Exp5A.csv", col.names = FALSE, row.names = FALSE, sep = ",")
-
-
-
-O1<-read.table("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Outlyingness_Exp5A.csv", header = FALSE, sep = ",")
+O1<-read.table("Outlyingness_Exp5A.csv", header = FALSE, sep = ",")
 dim(O1)
 
 O1<-O1$V1
