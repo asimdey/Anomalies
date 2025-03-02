@@ -3,7 +3,7 @@
 ######################################################
 ###################### Experimet 1 ##################
 
-nomFile<-read.table("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_Cobmined_RegularAnomaly_Exp2A.csv", header = TRUE, sep = ",")
+nomFile<-read.table("SBM_Cobmined_RegularAnomaly_Exp2A.csv", header = TRUE, sep = ",")
 
 
 nomFile<-nomFile[,-1]  # remove first column-- IDs
@@ -153,11 +153,9 @@ dim(PD[[24]])
 ######################################################################
 ################# Betti sequence ######################################
 
-#write.table(betti_1, "C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Betti_1_Exp2A.csv", col.names = FALSE, row.names = FALSE, sep = ",")
 
 
-
-Betti<-read.table("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Betti_1_Exp2A.csv", header = FALSE, sep = ",")
+Betti<-read.table("Betti_1_Exp2A.csv", header = FALSE, sep = ",")
 dim(Betti)
 
 head(Betti[1:5,1:4])
@@ -261,8 +259,6 @@ for (i in 1:NMat) { # i=1 #25
 dim(D1)
 
 head(D1)
-
-#write.table(D1, "C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_PD_Comb_Exp2A.csv", col.names = FALSE, row.names = FALSE, sep = ",")
 
 
 
