@@ -279,17 +279,6 @@ A0[0:m ,(t6*m-m):t6*m]=mat23
 A0.shape
 
 
-# convert array into dataframe
-#AD = pd.DataFrame(A0)
-  
-# save the dataframe as a csv file
-
-#AD.to_csv("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/SBM_Cobmined_RegularAnomaly_Exp4B.csv")
-
-#AD.to_csv("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_Cobmined_RegularAnomaly_Exp4B.csv")
-
-
-
 
 ##################### Distance measure ################
 
@@ -409,11 +398,4 @@ D1_Deltacon1 = pd.DataFrame(D1_Deltacon)
 D1_HannMik = pd.DataFrame(D1_HannMik)
  
 # save the dataframe as a csv file
-
-
-D1_Frob1.to_csv("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/D_Frob_SBM_exp4B.csv")
-D1_Deltacon1.to_csv("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/D_Deltacon_SBM_exp4B.csv")
-D1_HannMik.to_csv("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/D_HannMik_SBM_exp4B.csv")
-
-
 
