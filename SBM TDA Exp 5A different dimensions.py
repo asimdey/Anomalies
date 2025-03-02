@@ -201,8 +201,6 @@ for i in range(0, T,1):
   # convert array into dataframe
   AD = pd.DataFrame(A0)
   # save the dataframe as a csv file
-  AD.to_csv("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_Regular_Exp5A.csv")
-
 
 ###################################################################################
 
@@ -249,10 +247,6 @@ for i in range(0, 3,1):
   # convert array into dataframe
   AD1 = pd.DataFrame(A1)
   # save the dataframe as a csv file
-  AD1.to_csv("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_Events_Exp5A.csv")
-
-
-
 
 ##############################################################################################################
 ################### 3 Anomalies -- edge weight changed ####################
@@ -314,6 +308,3 @@ for i in range(0, 3,1):
   # convert array into dataframe
   AD2 = pd.DataFrame(A2)
   # save the dataframe as a csv file
-  AD2.to_csv("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_Anomaly_Exp5A.csv")
-  
-  
