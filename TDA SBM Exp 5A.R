@@ -1,7 +1,7 @@
 
 
 
-nomFile<-read.table("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_Regular_Exp5A.csv", header = TRUE, sep = ",")
+nomFile<-read.table("SBM_Regular_Exp5A.csv", header = TRUE, sep = ",")
 
 
 nomFile<-nomFile[,-1]  # remove first column-- IDs
@@ -54,7 +54,7 @@ maxValAll
 ## Event times: 6, 26, 44  
 
 
-Events<-read.table("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_Events_Exp5A.csv", header = TRUE, sep = ",")
+Events<-read.table("SBM_Events_Exp5A.csv", header = TRUE, sep = ",")
 
 Events<-Events[,-1]  # remove first column-- IDs
 head(Events[1:5,1:4])
@@ -83,7 +83,7 @@ affGRAPS[[44]]<-A1[0:525 ,1051:1575]
 
 
 
-Anomaly_ty2<-read.table("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_Anomaly_Exp5A.csv", header = TRUE, sep = ",")
+Anomaly_ty2<-read.table("SBM_Anomaly_Exp5A.csv", header = TRUE, sep = ",")
 
 Anomaly_ty2<-Anomaly_ty2[,-1]  # remove first column-- IDs
 head(Anomaly_ty2[1:5,1:4])
@@ -128,7 +128,6 @@ maxValAB #
 ##############################################################
 ###################  TDA   #################################################
 
-setwd("C:/Users/adey/OneDrive/Stochastic Block Models/Codes/")
 
 betti_0=betti_1=c()
 PD =c()
@@ -223,11 +222,8 @@ for (i in 1:NMat){ # i=1
 #############################################################################
 
 
-#write.table(betti_1, "C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Betti_1_Exp5A.csv", col.names = FALSE, row.names = FALSE, sep = ",")
 
-
-
-Betti<-read.table("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Betti_1_Exp5A.csv", header = FALSE, sep = ",")
+Betti<-read.table("Betti_1_Exp5A.csv", header = FALSE, sep = ",")
 dim(Betti)
 
 head(Betti[1:5,1:4])
@@ -307,8 +303,6 @@ for (i in 1:NMat) { # i=2 #25
 dim(D1)
 
 head(D1)
-
-#write.table(D1, "C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/SBM_PD_Comb_Exp5A.csv", col.names = FALSE, row.names = FALSE, sep = ",")
 
 
 ##################################################################
