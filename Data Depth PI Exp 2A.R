@@ -12,8 +12,8 @@ library(ineq)
 ###################### Experimet 1 ##################
 
 
-PI<-read.table("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/Exp2A_PI_SBM.csv", header = TRUE, sep = ",")
-PI<-read.table("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Exp2A_PI_SBM.csv", header = TRUE, sep = ",")
+PI<-read.table("~Exp2A_PI_SBM.csv", header = TRUE, sep = ",")
+
 
 PI<-PI[,-1]  # remove first column-- IDs
 head(PI[1:5,1:4])
@@ -68,10 +68,7 @@ O1
 
 
 
-
-#write.table(O1, "C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Outlyingness_Exp2A.csv", col.names = FALSE, row.names = FALSE, sep = ",")
-
-O1<-read.table("C:/Users/adey/OneDrive/Transportation Network/R code/Simulation/Comparison/Data/Outlyingness_Exp2A.csv", header = FALSE, sep = ",")
+O1<-read.table("~/Outlyingness_Exp2A.csv", header = FALSE, sep = ",")
 dim(O1)
 
 O1<-O1$V1
@@ -165,7 +162,7 @@ F1= 2*((Precision*Recall)/(Precision+Recall));F1 # 0.8571429
 ## Anomaly time 8, 17, 26, 35,46,54
 # here we need to back one because it losses first distance
 
-D1<-read.table("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/D_Deltacon_SBM_exp2A.csv", header = FALSE, sep = ",")
+D1<-read.table("~/D_Deltacon_SBM_exp2A.csv", header = FALSE, sep = ",")
 dim(D1)
 head(D1)
 
@@ -233,7 +230,7 @@ F1= 2*((Precision*Recall)/(Precision+Recall));F1 #  0.2222222
 ## 2. Frobenius distance  ###################
 
 
-F2<-read.table("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/D_Frob_SBM_exp2A.csv", header = FALSE, sep = ",")
+F2<-read.table("~/D_Frob_SBM_exp2A.csv", header = FALSE, sep = ",")
 dim(F2)
 head(F2)
 
@@ -305,7 +302,7 @@ F1= 2*((Precision*Recall)/(Precision+Recall));F1 #  0.2222222
 ## 3. Combination of Hamming and Ipsen-Mikhailov distances  ###################
 
 
-IM1<-read.table("~/Library/CloudStorage/OneDrive-Personal/Transportation Network/R code/Simulation/Comparison/Data/D_HannMik_SBM_exp2A.csv", header = FALSE, sep = ",")
+IM1<-read.table("~D_HannMik_SBM_exp2A.csv", header = FALSE, sep = ",")
 dim(IM1)
 head(IM1)
 
