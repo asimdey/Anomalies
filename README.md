@@ -9,5 +9,5 @@ The UCI message dataset (UCI_Text_Data_AA.txt) is uploaded as a .zip file. The a
 2.	Second, PI_UCI_message.py is run in Python using the output from step 1,
 3.	Third, Data_Depth_PI_UCI_message.R is run in R using the output from step 2.
 
-The competitor methods have separate R and Python codes.
+Competitor methods have separate R and Python codes.
 
